@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elecciones Locales — Yanahuaya | Cédula de Votación</title>
+  <meta name="description" content="Sistema de votación en tiempo real para las Elecciones Locales de Yanahuaya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style%20(1).css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="masthead">
+    <p class="masthead__eyebrow-free">Jurado Electoral Digital</p>
+    <h1 class="masthead__title">Elecciones Locales<br>Yanahuaya</h1>
+    <p class="masthead__subtitle">Marca tu preferencia una sola vez · Los resultados se actualizan en vivo</p>
+    <div class="live-badge">
+      <span class="live-badge__dot"></span>
+      EN VIVO
+    </div>
+  </header>
+
+  <!-- CONTADOR TOTAL -->
+  <div class="totals" id="totals" hidden>
+    <p class="totals__count">Total de votos: <strong id="totalVotesLabel">0</strong></p>
+  </div>
+
+  <!-- CÉDULA -->
+  <main class="ballot" id="ballot">
+    <div class="ballot__loading" id="loading">Cargando candidatos…</div>
+  </main>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span class="toast__icon">🗳️</span>
+    <div>
+      <p class="toast__title">¡Voto registrado exitosamente!</p>
+      <p class="toast__body">Gracias por participar. Los resultados se actualizan en tiempo real.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <p>Los resultados se actualizan en tiempo real para todos los participantes conectados.</p>
+  </footer>
+
+  <!-- Firebase SDK (v9 modular CDN) -->
+  <script type="module" src="app%20(1).js"></script>
+</body>
+</html>

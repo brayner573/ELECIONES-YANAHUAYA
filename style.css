@@ -409,6 +409,10 @@ body {
   z-index: 999;
 }
 
+.toast[hidden] {
+  display: none !important;
+}
+
 .toast__icon {
   font-size: 2rem;
   background: #ecfdf5;
